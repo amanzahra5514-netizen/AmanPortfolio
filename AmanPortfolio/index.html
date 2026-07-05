@@ -1,0 +1,204 @@
+<!-- =============================
+  index.html — Aman's Portfolio
+  Features: Sidebar nav, sections (Home, About, Services, Portfolio, Contact),
+  live theme color switcher, light/dark mode, typing animation,
+  responsive layout, decorative arrows around profile image,
+  mobile menu, social links. 
+============================= -->
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aman — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <!-- sidebar menu continues -->
+    </div>
+    <a href="#home" class="brand" id="brand">
+      <span class="brand-initial">A</span>
+      <span class="brand-name">Aman</span>
+      <!-- Arrow decoration around name (visible on mobile where profile image is hidden) -->
+      <!-- <span class="name-arrows">
+          <i class="arrow a1"></i>
+          <i class="arrow a2"></i>
+          <i class="arrow a3"></i>
+          <i class="arrow a4"></i>
+        </span> -->
+    </a>
+
+    <nav class="nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button id="themeToggler" class="icon-btn" title="Light/Dark">
+        <svg viewBox="0 0 24 24" class="icon">
+          <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" />
+        </svg>
+      </button>
+      <button id="paletteBtn" class="icon-btn" title="Theme Colors">
+        <svg viewBox="0 0 24 24" class="icon">
+          <path
+            d="M12 3a9 9 0 1 0 0 18h2.5a2.5 2.5 0 0 0 0-5H13a1 1 0 0 1-1-1v-0.5a1 1 0 0 1 1-1h2.5a2.5 2.5 0 0 0 0-5H14a1 1 0 0 1-1-1V5a2 2 0 0 0-1-2Z" />
+        </svg>
+      </button>
+    </div>
+
+
+    <div class="controls">
+      <button id="theme-toggle">🌙</button>
+      <div class="color-switcher">
+        <span data-color="#ff5722" style="background:#ff5722"></span>
+        <span data-color="#2196f3" style="background:#2196f3"></span>
+        <span data-color="#4caf50" style="background:#4caf50"></span>
+        <span data-color="#e91e63" style="background:#e91e63"></span>
+      </div>
+    </div>
+
+
+
+
+  </aside>
+
+  <!-- Theme Palette Panel -->
+  <div class="palette" id="palette">
+    <h4>Theme Colors</h4>
+    <div class="swatches">
+      <button class="swatch" data-color="#ff5722" style="--sw:#ff5722" aria-label="Orange"></button>
+      <button class="swatch" data-color="#2196f3" style="--sw:#2196f3" aria-label="Blue"></button>
+      <button class="swatch" data-color="#4caf50" style="--sw:#4caf50" aria-label="Green"></button>
+      <button class="swatch" data-color="#9c27b0" style="--sw:#9c27b0" aria-label="Purple"></button>
+      <button class="swatch" data-color="#e91e63" style="--sw:#e91e63" aria-label="Pink"></button>
+      <button class="swatch" data-color="#ffb300" style="--sw:#ffb300" aria-label="Amber"></button>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- HOME -->
+    <section id="home" class="section home">
+      <div class="home-text">
+        <h1 class="greeting">Hello, I'm <span class="accent">Aman</span></h1>
+        <h2 class="sub">I'm a <span class="typing" aria-live="polite"></span><span class="cursor">|</span></h2>
+        <p class="lead">I craft modern, responsive web experiences and create content across Instagram & YouTube. I love
+          clean UI, delightful micro‑interactions, and accessible code.</p>
+        <div class="cta">
+          <a href="#about" class="btn">More About Me</a>
+          <a href="#portfolio" class="btn ghost">See Portfolio</a>
+        </div>
+      </div>
+      <div class="home-figure">
+        <div class="avatar-wrap">
+          <img src="Portfolio.webp" alt="Aman Profile" class="avatar">
+          <!-- Decorative theme-colored arrows around profile pic -->
+          <span class="decor-arrows">
+            <i class="da da1"></i>
+            <i class="da da2"></i>
+            <i class="da da3"></i>
+            <i class="da da4"></i>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>I'm Aman Zahra — a frontend developer and creator focused on building fast, accessible websites with a
+            strong aesthetic. I enjoy React.js, and thoughtful CSS.</p>
+          <ul class="badges">
+            <li>HTML • CSS • JS</li>
+            <li>React • </li>
+            <li>Figma • UI/UX</li>
+            <li>Python • AI </li>
+          </ul>
+        </div>
+        <div class="facts">
+          <h3>Quick Facts</h3>
+          <ul>
+            <li><strong>Qualification:</strong> Intermediate / BS (in progress)</li>
+            <li><strong>Expertise:</strong> Frontend Development, UI/UX, Content</li>
+            <li><strong>Date of Birth:</strong> 01 Jan 2005</li>
+            <li><strong>Location:</strong> Pakistan</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <h2 class="section-title">My Work / Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Web Development</h3>
+          <p>Responsive websites, SPA landing pages, performance optimization.</p>
+        </article>
+        <article class="card">
+          <h3>UI Design</h3>
+          <p>Clean, consistent interfaces with a11y and component systems.</p>
+        </article>
+        <article class="card">
+          <h3>Content Creation</h3>
+          <p>Shorts/reels, thumbnails, and tutorial content for socials.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="grid">
+        <a class="tile" href="#" aria-label="Project 1"><span>Project 1</span></a>
+        <a class="tile" href="#" aria-label="Project 2"><span>Project 2</span></a>
+        <a class="tile" href="#" aria-label="Project 3"><span>Project 3</span></a>
+        <a class="tile" href="#" aria-label="Project 4"><span>Project 4</span></a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrap">
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks, I\'ll get back to you!');">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="4"></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <h3>Find me</h3>
+          <ul class="links">
+            <li><a href="tel:+923001234567">📞 +92 300 1234567</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noreferrer">🐙 GitHub</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noreferrer">📸 Instagram</a></li>
+            <li><a href="https://wa.me/923001234567" target="_blank" rel="noreferrer">💬 WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">© <span id="year"></span> Aman — All rights reserved.</footer>
+  </main>
+
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
